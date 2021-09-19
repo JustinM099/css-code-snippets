@@ -1,0 +1,120 @@
+:root {
+    --headerpurple: #d448e4;
+    --background-1: #333940;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: var(--background-1);
+    color: white;
+}
+
+header p {
+    padding: 0 15%;
+    text-align: center;
+}
+
+.container {
+    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+
+h1 {
+    color: var(--headerpurple);
+    padding-top: 1%;
+    text-align: center;
+    font-size: 250%;
+
+}
+.card {
+    align-items: stretch;
+    flex: 1;
+    width: 32%;
+    background-color: var(--background-1);
+    margin: 1%;
+    padding: 2%;
+    min-width: 300px;
+    max-width: 300px;
+    border-style: dashed;
+    border-color: white;
+    border-width: 2px;
+    margin-bottom: 2%;
+
+}
+
+
+.class-header {
+    color: var(--headerpurple);
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    border-radius: 10px;
+    position: relative;
+    margin-top: -50px;
+    font-size: 150%;
+    background-color: var(--background-1);
+    z-index: 1; 
+    padding-left: 2%;
+}
+
+.card .class-header {
+    border-radius: 8px;
+        transition: all 0.5s ease-in-out;
+ }
+
+ .card:hover,
+ .card:hover .class-header {
+    box-shadow: inset 0px 0px 8px  
+ rgba (232, 102, 236, 1), 0 0 15px
+ rgba (232, 102, 236, 1);
+ }
+
+.descriptive-text {
+    color: var(--headerpurple);
+    padding: 2% 0;
+    font-size: 13px;
+}
+
+.content {
+    border-radius: 10px;
+    color: white;
+    font-family: monospace;
+    padding: 1%;
+    position: relative;
+    background: linear-gradient(#96799d, var(--headerpurple));
+    user-select: all;
+    
+    
+}
+
+.card:hover {
+        box-shadow: 0 5px 15px rgba(232, 102, 236, 1);
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .card {
+        padding: 2%;
+        margin-top: 6%;
+        margin-bottom: 6%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .card {
+        padding: 7%;
+        margin-top: 6%;
+        margin-bottom: 6%;
+    }
+}
